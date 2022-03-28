@@ -7,7 +7,7 @@ def request_get(method: str, **params):
     proxy = None
 
     data = {
-        'access_token': os.getenv(TOKEN),
+        'access_token': os.getenv("TOKEN"),
         'v': 5.131
     }
     data.update(params)
